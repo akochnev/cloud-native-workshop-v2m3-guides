@@ -400,11 +400,11 @@ Let's use simple **curl** commands to send multiple concurrent requests to our a
 
 Execute this to simulate a number of users attampting to access the gateway URL simultaneously in CodeReady Workspaces Terminal.
 
-> Replace `YOUR_IVENTORY_GATEWAY_URL` with your custom inventory URL, e.g. `http://inventory-quarkus-userXX-inventory.{{ ROUTE_SUBDOMAIN }}`.
+> Replace `YOUR_INVENTORY_GATEWAY_URL` with your custom inventory URL, e.g. `http://inventory-quarkus-userXX-inventory.{{ ROUTE_SUBDOMAIN }}`.
 
 ~~~shell
     for i in {1..50} ; do
-        curl 'http://YOUR_IVENTORY_GATEWAY_URL/services/inventory' >& /dev/null &
+        curl 'http://YOUR_INVENTORY_GATEWAY_URL/services/inventory' >& /dev/null &
     done
 ~~~
 
